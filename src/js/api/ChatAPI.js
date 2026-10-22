@@ -3,7 +3,7 @@ import createRequest from "./createRequest";
 
 export default class ChatAPI extends Entity {
   constructor() {
-    super('http://localhost:3000')
+    super('https://chat-backend-1-asum.onrender.com')
   }
 
   createUser (name) {

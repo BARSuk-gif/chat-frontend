@@ -102,20 +102,10 @@
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
 .modal__form.active .modal__background,
 .modal__delete.active .modal__background{
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.7);
-
 }
 
 .modal__form.active .modal__content,

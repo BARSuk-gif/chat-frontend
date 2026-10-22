@@ -8,7 +8,6 @@ export default class Chat {
     this.user = null;
     this.isLoading = false;
     this.isClosing = false;
-    this.isOwn = false;
   }
 
   init() {
@@ -218,11 +217,11 @@ export default class Chat {
   renderMessage = (data, isOwn = false) => {
     if (isOwn) {
       const mesContainerYourself = document.createElement('div');
-      mesContainerYourself.classList.add('message__container',);
+      mesContainerYourself.classList.add('message__container', 'message__container-yourself');
       this.messageContainer.appendChild(mesContainerYourself);
 
       const mesYouUser = document.createElement('div');
-      mesYouUser.classList.add('message__header',);
+      mesYouUser.classList.add('message__header');
       mesYouUser.textContent = 'You';
       mesContainerYourself.appendChild(mesYouUser);
 
